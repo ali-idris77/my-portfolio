@@ -1,0 +1,116 @@
+@keyframes fadeinL {
+    from{
+        transform:translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeinR {
+    from{
+        transform:translateX(300px) ;
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.f1, .f2, .f3, .hrtxt, .cit{
+    animation: fadeinL 1600ms ease-out 200ms both;
+}
+.f2{
+    animation-delay: 300ms;
+}
+.f3{
+    animation-delay: 400ms;
+}
+.hrtxt{
+    animation-delay: 600ms;
+}
+.cit{
+    animation-delay: 700ms
+}
+.svi{
+    animation: fadeinR 1600ms ease-out  forwards;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: 500ms;
+}
+.abt-txt.show, .mig.show{
+    transform: translateY(0)
+                scale(1);
+}
+.abt-txt.show{
+    transition-delay: 200ms;
+}
+.skill-cards{
+    transform: translateX(-100%);
+}
+.skill-cards.show{
+    transform: translateX(0);   
+}
+.skill-cards.show:nth-child(4)
+,.skill-cards.show:nth-child(5),
+.skill-cards.show:nth-child(6) 
+{
+    transition-delay: 200ms;
+}
+.skill-cards.show:nth-child(7)
+,.skill-cards.show:nth-child(8),
+.skill-cards.show:nth-child(9) 
+{
+    transition-delay: 400ms;
+}
+.wid-card{
+    transform: translateX(100%);
+}
+.wid-card.show{
+    transform: translateX(0);
+}
+.wid-card.show:nth-child(),
+.wid-card.show:nth-child(),
+.wid-card.show:nth-child(){
+    transition-delay: 200ms;
+}
+.project-card{
+    scale: 0.5;
+    transform: translateY(30%);
+}
+.project-card.show{
+    scale: 1;
+    transform: translateY(0);
+}
+.contact-section{
+     scale: 0.5;
+    transform: translateY(30%);
+}
+.contact-section.show{
+     scale: 1;
+    transform: translateY(0);
+}
+.frm{
+    transform: translateX(100%);
+}
+.frm.show{
+    transform: translateX(0);
+    transition-delay: 500ms;
+}
+.brgr.active span:first-child{
+    transform: rotate(45deg)
+                translateX(35%);
+}
+.brgr.active span:nth-child(2){
+   opacity: 0;
+}
+.brgr.active span:last-child{
+    transform: rotate(-45deg)
+                translateX(35%);
+}
+ul.mobile.active{
+    transform: translateX(0);
+}
