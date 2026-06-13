@@ -62,12 +62,17 @@
     }
     .hero-section{
         flex-direction: column-reverse;
+        justify-content: center;
     }
     .svi{
         width: 100%;
-        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top:0;
         img{
             width: 60%;
+            height: 70%;
         }
     }
     .about-section{
@@ -75,8 +80,9 @@
         gap: 0;
     }
     .abt-txt{
-        max-width: unset;
-        text-align: justify;
+        max-width: 70vw;
+        text-align: right;
+        align-self: flex-end;
     }
     .mig{
         width: 100%;
